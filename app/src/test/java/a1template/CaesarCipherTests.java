@@ -14,6 +14,7 @@ public class CaesarCipherTests {
         assertEquals(0,classUnderTest.findIndex('a'));
         assertEquals(12,classUnderTest.findIndex('m'));
         assertEquals(25,classUnderTest.findIndex('z'));
+        // -----
     }
 
     @Test
