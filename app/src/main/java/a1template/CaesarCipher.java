@@ -2,6 +2,7 @@
 // Classes to build the project
 package a1template;
 
+//trying to check if publishing works
 public class CaesarCipher {
 
     /** Character array to store the letters in the alphabet in order */
