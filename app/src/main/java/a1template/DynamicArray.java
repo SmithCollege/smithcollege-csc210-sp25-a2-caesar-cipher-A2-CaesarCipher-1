@@ -5,26 +5,19 @@ package a1template;
 public class DynamicArray<T> implements IndexAccess<T>{
     
     // What instance variables do you need?
-    T[] arr;
+    private T[] arr;
+    private int offset;
 
     // Write a constructor to make a new DynamicArray Object from an array
 
-    public DynamicArray(int offset, T[] inArr) { //constructor
+    public DynamicArray(int offset, T[] alphabet) { //constructor
 
-        // this.arr = new T[inArr.length];
-        // for(int i = 0; i< inArr.length; i++){
-        //     this.arr[i] = inArr[i];
-        // }
-
-        int counter = 0;
-        for(int i = offset; i < inArr.length; i++){
-            arr[counter] = inArr[i];
-            counter++;
+        this.arr = (T[]) new Object[alphabet.length];
+        this.offset = offset;
+        for(int i = 0; i< alphabet.length; i++){
+            this.arr[i] = alphabet[i];
         }
-        for(int i = 0; i<offset; i++){
-            arr[counter] = inArr[i];
-            counter++;
-        }  
+
     }
 
     // Now implement the methods from IndexAccess?

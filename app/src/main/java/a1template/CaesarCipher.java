@@ -18,8 +18,27 @@ public class CaesarCipher {
      * populating the alphabet
      * @param offset Offset to use when creating `cipher` of DynamicArray type
      */
+
     CaesarCipher(int offset){
         // Fill in here
+        this.offset = offset;
+
+        this.alphabet = new Character[26];
+
+        int counter = 0;
+        for(int i = offset; i < 26; i++){
+            this.alphabet[counter] = Character.valueOf((char) ('a' + i));
+            counter++;
+        }
+        for(int i = 0; i < offset; i++){
+            this.alphabet[counter] = Character.valueOf((char) ('a' + i));
+            counter++;
+        }  
+
+        // for (int i = 0; i < 26; i++) {
+        //     alphabet[i] = Character.valueOf((char) ('a' + i));
+        // }
+        this.cipher = new DynamicArray<Character>(offset, alphabet);
     }
 
     /** Implementation of linear search that looks through the alphabet
@@ -30,7 +49,13 @@ public class CaesarCipher {
     public int findIndex(char val){
         // This is a stub -- fill in the code and return the
         // value you calculate
-        return 0;
+
+        for(int i = 0; i < 26; i++ ) {
+            if(cipher.get(i) == val){
+                return i;
+            }
+        }
+        return -1;
     }
 
     /** Encode a message using the cipher
