@@ -2,19 +2,24 @@
 // Classes to build the project
 package a1template;
 
+
 public class DynamicArray<T> implements IndexAccess<T>{
     
     // What instance variables do you need?
-    private T[] storage; //the underlying array
+    private T[] baseArray; //the underlying array
     private int n; //the number of elements stored 
     // private int capacity; //the total capacity of the array
 
     // Write a constructor to make a new DynamicArray Object from an array
+    public DynamicArray(){
+        this.baseArray = (T[]) new Object[0];
+        this.n = 0;
+    }
 
     // Now implement the methods from IndexAccess?
     public T get(int index){
         indexNum(index);
-        return storage[index];
+        return baseArray[index];
     }
 
     public T get(int index, int offset){
@@ -23,18 +28,17 @@ public class DynamicArray<T> implements IndexAccess<T>{
         if (index + offset >= n){
             x = offset %n;
         }
-        return storage[index+x];
+        return baseArray[index+x];
     }
 
     public void set(int index, T element){
         indexNum(index);
-        storage[index] = element;
+        baseArray[index] = element;
     }
 
     public void indexNum(int index){
         if (index < 0 || index >= n){
-            //throw?
+            throw new IndexOutOfBoundsException(index);
         }
     }
-
 }
