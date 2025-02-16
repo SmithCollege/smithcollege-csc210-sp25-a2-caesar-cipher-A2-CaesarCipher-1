@@ -35,7 +35,7 @@ public class DynamicArray<T> implements IndexAccess<T>{
      * @return value stored at the given index
      */
     public T get(int i, int offset){
-        return arr[i + offset];
+        return arr[((i+offset) % 26)];  
     }
 
     /** Stores the given value at the given index
@@ -44,6 +44,15 @@ public class DynamicArray<T> implements IndexAccess<T>{
      */
     public void set(int i, T val){
         arr[i] = val;
+    }
+
+    public int findIndex(T val){
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == val){
+                return i;
+            }
+        }
+        return -1;
     }
 
 }

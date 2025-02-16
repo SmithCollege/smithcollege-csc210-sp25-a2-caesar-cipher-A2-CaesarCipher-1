@@ -63,7 +63,13 @@ public class CaesarCipher {
      * @return encoded message */  
     public String encode(String message){
         // Fill in here and update return statement based on your code
-        return new String(); 
+        char[] messageArr = message.toLowerCase().toCharArray();
+        int pos = 0;
+        for(int i = 0; i < messageArr.length; i++){
+            pos = findIndex(messageArr[i]);
+            messageArr[i] = cipher.get(pos, offset);
+        }
+        return new String(messageArr);
      }
 
     /** Decode a message using the cipher 
