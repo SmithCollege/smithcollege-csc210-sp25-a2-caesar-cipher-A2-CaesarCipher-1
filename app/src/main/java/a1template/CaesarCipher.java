@@ -24,16 +24,6 @@ public class CaesarCipher {
         this.offset = offset;
         this.alphabet = new Character[26];
 
-        // int counter = 0;
-        // for(int i = offset; i < 26; i++){
-        //     this.alphabet[counter] = Character.valueOf((char) ('a' + i));
-        //     counter++;
-        // }
-        // for(int i = 0; i < offset; i++){
-        //     this.alphabet[counter] = Character.valueOf((char) ('a' + i));
-        //     counter++;
-        // }  
-
         for (int i = 0; i < 26; i++) {
              alphabet[i] = Character.valueOf((char) ('a' + i));
         }
@@ -61,7 +51,9 @@ public class CaesarCipher {
 
     /** Encode a message using the cipher
      * @param T message to encode
-     * @return encoded message */  
+     * @return encoded message 
+     * 
+     */  
     public String encode(String message){
         // Fill in here and update return statement based on your code
         String encoded = "";
@@ -97,6 +89,12 @@ public class CaesarCipher {
         return decoded;
     }
 
+    /**
+     * Returns the value at a given index
+     * @param index position of value
+     * @return value at index
+     * 
+     */
     public char get(int index){
         return cipher.get(index);
     }

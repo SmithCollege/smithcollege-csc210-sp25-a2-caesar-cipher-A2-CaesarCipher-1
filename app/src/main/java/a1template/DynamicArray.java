@@ -47,6 +47,11 @@ public class DynamicArray<T> implements IndexAccess<T>{
         arr[i] = val;
     }
 
+    /**
+     * Return the index of a value in the dynamic array
+     * @param val value to look for
+     * @return index of the value
+     */
     public int indexOf(T val){
         for(int i = 0; i < arr.length; i++){
             if(arr[i] == val){
