@@ -2,7 +2,6 @@
 // Classes to build the project
 package a1template;
 
-import com.apple.laf.AquaButtonBorder.Dynamic;
 
 public class DynamicArray<T> implements IndexAccess<T>{
     
@@ -11,7 +10,7 @@ public class DynamicArray<T> implements IndexAccess<T>{
     T[] array;
     // Write a constructor to make a new DynamicArray Object from an array
     public DynamicArray(int arrayLength, T[] array){
-        this.array= new array[arrayLength];
+        this.array= array;
     }
     // Now implement the methods from IndexAccess?
     /** Returns the value stored at a given index
