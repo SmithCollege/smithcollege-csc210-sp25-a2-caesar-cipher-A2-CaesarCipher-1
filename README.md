@@ -15,6 +15,12 @@ References Used:
 
 What was your favorite part of this assignment?
 
+Hayley: My favorite part of the assignment was working with the group to figure out how we should code the cipher.
+
 What was most challenging about this assignment?
 
+Hayley: The most challenging part for me was understanding how the shift in indeces work in the cipher and how gradle works.
+
 General comments on your experience with this assignment:
+
+Hayley: This assignment was difficult to understand at first but over time it made more sense to me, and gave me a good idea of how arrays work.
