@@ -39,7 +39,7 @@ public class CaesarCipher {
         }
         this.cipher = new DynamicArray<Character>(offset, alphabet);
         for(int i = 0; i < alphabet.length; i++){
-            this.cipher.set(i, alphabet[(i + offset) % 26]);
+            this.cipher.set(i, alphabet[(i - offset + 26) % 26]);
         }
     }
 
@@ -87,7 +87,7 @@ public class CaesarCipher {
         String decoded = "";
         char[] messageArr = message.toLowerCase().toCharArray();
         for (char letter : messageArr) {
-            int pos = findIndex(letter);
+            int pos = cipher.indexOf(letter);
             if (pos != -1) {
                 decoded += alphabet[pos];
             } else {

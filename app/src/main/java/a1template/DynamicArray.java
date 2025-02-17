@@ -47,7 +47,7 @@ public class DynamicArray<T> implements IndexAccess<T>{
         arr[i] = val;
     }
 
-    public int findIndex(T val){
+    public int indexOf(T val){
         for(int i = 0; i < arr.length; i++){
             if(arr[i] == val){
                 return i;
