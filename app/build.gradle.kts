@@ -27,5 +27,5 @@ application {
 }
 
 tasks.named<Test>("test") {
-    useJUnit() // ✅ Use JUnit 4 instead of JUnit 5g
+    useJUnit() // ✅ Use JUnit 4 instead of JUnit 5
 }
