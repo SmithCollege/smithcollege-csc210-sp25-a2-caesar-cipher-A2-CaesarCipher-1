@@ -29,7 +29,7 @@ public class CaesarCipher {
         }
         this.cipher = new DynamicArray<Character>(offset, alphabet);
         for(int i = 0; i < alphabet.length; i++){
-            this.cipher.set(i, alphabet[(i - offset + (26*(offset/26))) % 26]);
+            this.cipher.set(i, alphabet[(i - (offset%26) + 26) % 26]);
         }
     }
 
