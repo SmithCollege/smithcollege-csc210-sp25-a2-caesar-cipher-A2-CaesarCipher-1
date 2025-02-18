@@ -4,7 +4,7 @@
 
 Your readme should include the following information. Each student needs to submit all of this information independently, even when pair programming. 
 
-Programming Partner Name: Hayley Ma, Melissa Mugisha Kabalisa
+Programming Partner Name: Vivian Myers, Hayley Ma, Melissa Mugisha Kabalisa
 
 Other Collaborators (and kudos to people who were especially helpful):
 

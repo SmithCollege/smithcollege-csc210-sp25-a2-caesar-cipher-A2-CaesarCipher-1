@@ -27,13 +27,13 @@ ___yes__ 2 pts: `CaesarCipher` can encode messages and passes tests
 
 __yes___ 2 pts: `CaesarCipher` can decode messages and passes tests
 
-_____ 2 pts: At least two encoding tests are provided in `YourTests.java`
+__yes___ 2 pts: At least two encoding tests are provided in `YourTests.java`
 
-_____ 2 pts: At least two decoding tests are provided in `YourTests.java`
+__yes___ 2 pts: At least two decoding tests are provided in `YourTests.java`
 
-_____ KUDOS: Handles capitalization through cleaning the message 
+__no___ KUDOS: Handles capitalization through cleaning the message 
 
-_____ DOUBLE KUDOS: Retains capitalization
+__no___ DOUBLE KUDOS: Retains capitalization
 
 ## General Items:
 
