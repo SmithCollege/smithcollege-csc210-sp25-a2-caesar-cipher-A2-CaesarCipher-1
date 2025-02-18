@@ -14,6 +14,12 @@ public class YourTests {
         assertEquals(25,classUnderTest.findIndex('z'));
     }
 
-    
+    @Test 
+    public void EdgeCaseTest2() {
+        CaesarCipher classUnderTest = new CaesarCipher(52);
+        assertEquals(0,classUnderTest.findIndex('a'));
+        assertEquals(12,classUnderTest.findIndex('m'));
+        assertEquals(25,classUnderTest.findIndex('z'));
+    }
 
 }
