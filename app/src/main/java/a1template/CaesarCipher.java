@@ -25,9 +25,9 @@ public class CaesarCipher {
         this.alphabet = new Character[26];
 
         for (int i = 0; i < 26; i++) {
-             alphabet[i] = Character.valueOf((char) ('a' + i));
+             alphabet[i] = (char) ('a' + i);
         }
-        this.cipher = new DynamicArray<Character>(offset, alphabet);
+        this.cipher = new DynamicArray<>(offset, alphabet);
         for(int i = 0; i < alphabet.length; i++){
             this.cipher.set(i, alphabet[(i - (offset%26) + 26) % 26]);
         }
@@ -50,7 +50,7 @@ public class CaesarCipher {
     }
 
     /** Encode a message using the cipher
-     * @param T message to encode
+     * @param message to encode
      * @return encoded message 
      * 
      */  
@@ -70,8 +70,7 @@ public class CaesarCipher {
      }
 
     /** Decode a message using the cipher 
-     * @param String message to decode
-     * @param int key to use in decoding
+     * @param message to decode
      * @return decoded message
     */
     public String decode(String message){
@@ -83,7 +82,7 @@ public class CaesarCipher {
             if (pos != -1) {
                 decoded += alphabet[pos];
             } else {
-                decoded += letter; // keep space or puntuation characters unchanged
+                decoded += letter; // keep space or punctuation characters unchanged
             }
         }
         return decoded;
