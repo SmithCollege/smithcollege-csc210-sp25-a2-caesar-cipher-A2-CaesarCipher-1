@@ -19,14 +19,20 @@ Hayley: My favorite part of the assignment was working with the group to figure 
 
 Vivian: My favorite part was discussing different strategies for implementing the cipher and figuring out which worked best.
 
+Melissa: I had fun thinking through the most efficient ways to work with different offset values and how the DynamicArray and CaesarCipher would work with each other.
+
 What was most challenging about this assignment?
 
 Hayley: The most challenging part for me was understanding how the shift in indeces work in the cipher and how gradle works.
 
 Vivian: The most challenging part was understanding gradle and unit tests.
 
+Melissa: A challenging part for me was the unit tests as well as figuring out how to fix the edge cases.
+
 General comments on your experience with this assignment:
 
 Hayley: This assignment was difficult to understand at first but over time it made more sense to me, and gave me a good idea of how arrays work.
 
 Vivian: I think the assignment was helpful in understand our previous work with dynamic array. It was difficult(but ultimately helpful) working in a new environment(gradle, github classroom) with little instruction on how exactly to implement the cipher. 
+
+Melissa: The assignment helped me with thinking to the "tiniest" of details to make sure that the program was functional overall. While it was initially challenging, it was pleasant working with a team using unfamiliar tools and thinking differently to implement a caesar cipher.  

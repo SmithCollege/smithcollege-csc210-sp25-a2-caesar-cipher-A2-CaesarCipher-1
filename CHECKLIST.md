@@ -55,4 +55,4 @@ ___yes__ 2 pt: Complies with style guidelines:
 
 __yes___ 1 pt: All required files included with submission (including basic readme info and completed checklist file) 
 
-_____ 1 pt: README.md contains answers your reflection on the assignment 
+__yes___ 1 pt: README.md contains answers your reflection on the assignment 
