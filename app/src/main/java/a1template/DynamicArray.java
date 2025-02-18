@@ -40,7 +40,7 @@ public class DynamicArray<T> implements IndexAccess<T>{
     }
 
     /** Stores the given value at the given index
-     * @param i index of locaßtion to store
+     * @param i index of location to store
      * @param val value to store at given index
      */
     public void set(int i, T val){
