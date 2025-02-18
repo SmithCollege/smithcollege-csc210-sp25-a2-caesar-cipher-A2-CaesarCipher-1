@@ -17,10 +17,16 @@ What was your favorite part of this assignment?
 
 Hayley: My favorite part of the assignment was working with the group to figure out how we should code the cipher.
 
+Vivian: My favorite part was discussing different strategies for implementing the cipher and figuring out which worked best.
+
 What was most challenging about this assignment?
 
 Hayley: The most challenging part for me was understanding how the shift in indeces work in the cipher and how gradle works.
 
+Vivian: The most challenging part was understanding gradle and unit tests.
+
 General comments on your experience with this assignment:
 
 Hayley: This assignment was difficult to understand at first but over time it made more sense to me, and gave me a good idea of how arrays work.
+
+Vivian: I think the assignment was helpful in understand our previous work with dynamic array. It was difficult(but ultimately helpful) working in a new environment(gradle, github classroom) with little instruction on how exactly to implement the cipher. 
