@@ -19,8 +19,13 @@ public class CaesarCipher {
      * populating the alphabet
      * @param offset Offset to use when creating `cipher` of DynamicArray type
      */
-    CaesarCipher(int offset){
+    public CaesarCipher(int offset){
         // Fill in here
+     
+        this.alphabet = new Character[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'};
+        this.offset = offset;
+        //this.cipher =  new DynamicArray<Character>(offset);
+        
     }
 
     /** Implementation of linear search that looks through the alphabet
@@ -31,7 +36,13 @@ public class CaesarCipher {
     public int findIndex(char val){
         // This is a stub -- fill in the code and return the
         // value you calculate
-        return 0;
+        int i=0;
+        int index=0;
+        while(val!=alphabet[i]){
+            i++;
+            index++;
+        }
+        return index;
     }
 
     /** Encode a message using the cipher
@@ -39,7 +50,13 @@ public class CaesarCipher {
      * @return encoded message */  
     public String encode(String message){
         // Fill in here and update return statement based on your code
-        return new String(); 
+        int position = 0; 
+        char[] mArray = message.toCharArray();
+        for (int i = 0; i < message.length(); i++  ){
+            position = this.findIndex(mArray[i]); 
+            mArray[i] = alphabet[position + offset];
+        }
+        return new String(mArray.toString()); 
      }
 
     /** Decode a message using the cipher 
@@ -49,10 +66,27 @@ public class CaesarCipher {
     */
     public String decode(String message){
         // Fill in here and update return statement based on your code
+        int position = 0; 
+        char[] mArray = message.toCharArray();
+        for (int i = 0; i < message.length(); i++  ){
+            position = findIndex(mArray[i]); 
+            mArray[i] = alphabet[position + offset];
+           // if (position+offset > alphabet.length){
+            //    position 
+
+           // } 
+            mArray[i] = alphabet[position - offset];
+        }
         return new String();
     }
 
+    public char get(int index){
+        return alphabet[index];
+    }
+
     public static void main(String[] args) {
+        CaesarCipher myCaesarCipher = new CaesarCipher(3);
+        myCaesarCipher.encode("Hello");
     }
     
 }
