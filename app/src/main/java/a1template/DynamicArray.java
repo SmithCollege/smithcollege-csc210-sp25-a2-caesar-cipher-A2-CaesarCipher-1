@@ -35,14 +35,31 @@ public class DynamicArray<T> implements IndexAccess<T>{
     }
 
     public T get(int i, int offset){
+       
         //still need a throw exception or try catch in case the i is more than the elements in array
-        if ( (i+ offset) >= baseArray.length ){
-            offset = offset % baseArray.length;
+        // if ( (i+ offset) >= baseArray.length ){
+        //     offset = offset % baseArray.length;
 
-        }
+        // }
 
-        return baseArray[i+offset];
+        return baseArray[(i+offset) % baseArray.length];
     }
+
+    public T getdecode(int i, int offset){
+      int index = (i+offset) % baseArray.length;
+      return baseArray[index];
+  }
+
+  public T getencode(int i, int offset){
+    int index = (i-offset) % baseArray.length;
+    if (index <0){
+      index = index + 26;
+    }
+
+    return baseArray[index];
+}
+
+
 
     public void set(int i, T val){
         baseArray[i] = val;
