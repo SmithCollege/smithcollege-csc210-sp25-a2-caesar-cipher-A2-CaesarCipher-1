@@ -13,6 +13,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+
     - name: Dynamic Array Tests
       id: dynamic-array-tests
       uses: classroom-resources/autograding-command-grader@v1
@@ -48,4 +49,3 @@ jobs:
         YOUR-TESTS_RESULTS: "${{steps.your-tests.outputs.result}}"
       with:
         runners: dynamic-array-tests,caesar-cipher-tests,your-tests
-

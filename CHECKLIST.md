@@ -11,37 +11,37 @@ your work, please indicate the status of each item
 
 Assignment Points (out of 25):
 
-_____ 1 pt: Interface is properly implemented
+YES 1 pt: Interface is properly implemented
 
-_____ 1 pt: Appropriate instance variables defined for `DynamicArray`
+YES 1 pt: Appropriate instance variables defined for `DynamicArray`
 
-_____ 2 pt: Getters and setters written for `DynamicArray` 
+YES 2 pt: Getters and setters written for `DynamicArray` 
 
-_____ 1 pt: `DynamicArray` passes provided tests
+YES 1 pt: `DynamicArray` passes provided tests
 
-_____ 1 pts: `CaesarCipher` constructor populates all instance variables
+YES 1 pts: `CaesarCipher` constructor populates all instance variables
 
-_____ 1 pts: Linear search is correctly implemented in `CaesarCipher.findIndex`
+YES 1 pts: Linear search is correctly implemented in `CaesarCipher.findIndex`
 
-_____ 2 pts: `CaesarCipher` can encode messages and passes tests
+YES 2 pts: `CaesarCipher` can encode messages and passes tests
 
-_____ 2 pts: `CaesarCipher` can decode messages and passes tests
+YES 2 pts: `CaesarCipher` can decode messages and passes tests
 
 _____ 2 pts: At least two encoding tests are provided in `YourTests.java`
 
 _____ 2 pts: At least two decoding tests are provided in `YourTests.java`
 
-_____ KUDOS: Handles capitalization through cleaning the message 
+YES KUDOS: Handles capitalization through cleaning the message 
 
-_____ DOUBLE KUDOS: Retains capitalization
+_____ DOUBLE KUDOS: Retains capitalizationq
 
 ## General Items:
 
-_____ 4 pts: Programs compile without errors or warnings 
+YES 4 pts: Programs compile without errors or warnings 
 
-_____ 2 pts: Executes fully & consistently without crashing (exceptions/freezing)
+YES 2 pts: Executes fully & consistently without crashing (exceptions/freezing)
 
-_____ 2 pt: Complies with style guidelines:
+YES 2 pt: Complies with style guidelines:
 
       _____ Classes & class members all have Javadoc header comments 
 
