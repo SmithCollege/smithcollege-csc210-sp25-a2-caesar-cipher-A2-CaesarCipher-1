@@ -4,17 +4,20 @@
 
 Your readme should include the following information. Each student needs to submit all of this information independently, even when pair programming. 
 
-Programming Partner Name:
+Programming Partner Name: N/A
 
-Other Collaborators (and kudos to people who were especially helpful):
+Other Collaborators (and kudos to people who were especially helpful): N/A
 
-References Used:
+References Used: N/A
 
 
 ## Reflection Questions
 
 What was your favorite part of this assignment?
+My favorite part was actually running the tests after I finished writing codes for CaesarCipher and DynamicArray. When I ran them at first none of them passed any tests, so it was fun to do some problem sovling from there.
 
 What was most challenging about this assignment?
+For me, the most challenging part of the assignment was when I had to make sure all offsets worked well in CaesarCipher. While it was easy to come up with an algorithm, it was hard to figure out the mathematical function that could help me successfully implement encode/decode.
 
 General comments on your experience with this assignment:
+I think this assignment has really helped me grasp the concepts/functions of arrays that I didn't realize I was unfamiliar with. Directly working with them and implementing ciphers was definitely fun.

@@ -50,15 +50,18 @@ public class CaesarCipher {
      * @return encoded message */  
     public String encode(String message){
         // Fill in here and update return statement based on your code
-        int length = message.length();
         char[] msgArray = message.toCharArray();
+        int length = message.length();
 
         for (int i=0; i<length; i++){
-            int x = findIndex(msgArray[i]);
-            msgArray[i] = alphabet[x+offset];
+            if (Character.isLetter(msgArray[i])){
+                int x = findIndex(msgArray[i]); // x is the # of the alphabet
+                int encodeIndex = (((x - offset)%26)+26)%26;
+                msgArray[i] = alphabet[encodeIndex];
+            }
         }
 
-        return msgArray.toString(); 
+        return new String(msgArray); 
      }
 
 
@@ -69,22 +72,31 @@ public class CaesarCipher {
     */
     public String decode(String message){
         // Fill in here and update return statement based on your code
-        int length = message.length();
         char[] msgArray = message.toCharArray();
+        int length = message.length();
 
         for (int i=0; i<length; i++){
-            int x = findIndex(msgArray[i]);
-            msgArray[i] = alphabet[x-offset];
+            if (Character.isLetter(msgArray[i])){
+                int x = findIndex(msgArray[i]); // x is the # of the alphabet
+                int decodeIndex = ((Math.abs(x + offset)%26)+26)%26;
+                msgArray[i] = alphabet[decodeIndex];
+            }
         }
-
-        String encodedMessage = msgArray.toString();
-        return encodedMessage; 
+        
+        return new String(msgArray); 
     }
 
+    /**
+     * Retrieves the character in the specified index.
+     * @param index the location of the character that needs to be returned.
+     * @return the character in the specified index.
+     */
     public char get(int index){
-        char x = alphabet[index];
+        int n = ((((index - offset))%26)+26)%26;
+        char x = alphabet[n];
         return x;
     }
+
     public static void main(String[] args) {
     }
     
